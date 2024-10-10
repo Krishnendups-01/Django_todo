@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends "common.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <h4 style="text-align: center;">TO DO</h4>
+    <div>
+        <form method=post style=" padding-inline: 5em; padding-top: 1em; width: 40em;">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Title</label>
+                <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Enter Title">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Description</label>
+                <input type="text" name="description" class="form-control" id="exampleFormControlInput1" placeholder="Enter Description">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Start Date</label>
+                <input type="date" name="startdate" class="form-control" id="exampleFormControlInput1" placeholder="Enter Start date">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">End Date</label>
+                <input type="date" name="enddate" class="form-control" id="exampleFormControlInput1" placeholder="Enter End date">
+            </div>
+            <div>
+                <button type="button" class="btn btn-success">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <a href="items">itemslist</a>
+    {% endblock content %}
+</body>
+</html>
